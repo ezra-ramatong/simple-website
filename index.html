@@ -19,24 +19,25 @@
 <body>
   <header>
     <nav>
-      <a class="site-name" href="#">ezrar.net</a>
+      <a class="site-name" href="#">ezrar</a>
       <ul class="links">
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>CV</li>
-        <li>Contact Me</li>
+        <li><a href="#tech-stack">Tech stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#tech-stack">Hire Me</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section id="about-me" class="about-me">
+    <section id="home" class="home">
       <div class="description">
         <h1 class="name">Hi! I'm Ezra</h1>
         <p class="description-body">
           I am a certified tinkerer. Aside from tweaking my Neovim config for the 1000th time, I build blazingly fast
           web apps with the latest bloat the <i class="fa-brands fa-js js-icon"></i> ecosystem has to offer!
         </p>
+        <button type="button" class="cta-btn">Hire me</button>
       </div>
       <div class="img-container">
         <div class="crop">
@@ -44,6 +45,84 @@
         </div>
       </div>
     </section>
+    <section id="tech-stack" class="tech-stack">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><i class="fa-brands fa-html5 stack-icon"></i> HTML</li>
+        <li><i class="fa-brands fa-css3-alt stack-icon"></i> CSS</li>
+        <li><i class="fa-brands fa-js stack-icon"></i> JavaScript</li>
+        <li><i class="fa-brands fa-node stack-icon"></i> Node.js</li>
+        <li><i class="fa-brands fa-github stack-icon"></i> Github</li>
+      </ul>
+    </section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <article class="project-1">
+        <h3>Hyprland Config</h3>
+        <img src="images/screenshot.png" alt="Hyprland config">
+        <p>My current Hyprland config <a target="_blank"
+            href="https://github.com/ezra-ramatong/dotfiles/tree/main/hypr/.config/hypr">dotfiles</a></p>
+      </article>
+      <article class="project-1">
+        <h3>Arch Linux <3< /h3>
+            <img src="images/arch.png" alt="arch">
+      </article>
+      <article class="project-1">
+        <h3>Under construction</h3>
+        <img src="images/vecteezy_caution-tape-of-yellow-warning-ribbons-abstract-warning_22230994.jpg" alt="arch"
+          height="100">
+        <p>Move along, come back soon!</p>
+      </article>
+    </section>
+    <section id="cv" class="cv">
+      <h2>View CV</h2>
+      <button class="cv-btn" type="button"><a target="_blank"
+          href="https://drive.google.com/file/d/1g2icb1DNsCjuoK8VtuBm_TdhgQE_CBo-/view?usp=sharing">View CV</a></button>
+    </section>
+    <section id="about-me" class="about-me">
+      <h2>Speed Date</h2>
+      <ul>
+        <li>I currently reside in Pretoria (Keen to relocate). My favourite food is mom's oven-baked mince Mac n'
+          Cheese. </li>
+        <li>My favourite album is Graceland by Paul Simon.</li>
+        <li>Editor: Neovim</li>
+        <li>OS: Arch btw.</li>
+        <li>Fav programming languages: JavaScript, C++, Go, Kotlin</li>
+        <li>I garden, produce music and solve an unreasonable amount of Sudokus.</li>
+      </ul>
+    </section>
+    <section id="hire-me" class="hire-me">
+      <h2>Hire Me</h2>
+      <p>If you need a junior dev that is coachable, knows how to RTFM, won't get in your way and has a
+        curiosity level of 9000, I'm your man.
+      </p>
+      <a target="_blank" href="mailto:ezraramatong@gmail.com"><i class="fa-solid fa-envelope"></i> Reach me using this
+        Email!</a>
+      <a target="_blank" href="https://github.com/ezra-ramatong"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a target="_blank" href="https://www.linkedin.com/in/ezraramatong/"><i class="fa-brands fa-linkedin"></i>
+        LinkedIn</a>
+    </section>
+    <button type="button" id="scrollToTopBtn" class="back-to-top cv-btn"> <i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+
+      // Get the button
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopBtn.addEventListener("click", function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      });
+    </script>
   </main>
 </body>
 
