@@ -1,0 +1,171 @@
+/*CSS Reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Variables */
+:root {
+  /* One Dark Theme Colors */
+  --one-bg: #282c34;
+  --one-fg: #abb2bf;
+  --one-red: #e06c75;
+  --one-green: #98c379;
+  --one-yellow: #e5c07b;
+  --one-blue: #61afef;
+  --one-purple: #c678dd;
+  --one-cyan: #56b6c2;
+
+  /* Fonts  */
+  --font-family-sans: "Inter", sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
+  --font-weight-bold: 700;
+
+  --container-width: 70%;
+}
+
+body {
+  background: var(--one-bg);
+  color: var(--one-fg);
+  font-family: var(--font-family-sans);
+  min-height: 100vh;
+}
+
+header {
+  padding-block: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+nav .site-name {
+  color: var(--one-yellow);
+  font-family: var(--font-family-mono);
+  font-size: 1.2rem;
+  /* font-weight: var(--font-weight-bold); */
+  margin-right: auto;
+  text-decoration: none;
+  border: 1px solid var(--one-yellow);
+  padding: 0.5rem;
+}
+
+nav .links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links > li {
+  color: var(--one-yellow);
+}
+
+.links > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+main {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+.about-me {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.crop {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 5px 2px 20px hsla(0, 50%, 90%, 0.1);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: 4rem;
+}
+
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(45%) saturate(200%);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60ch;
+}
+
+.name {
+  font-size: 6rem;
+  color: var(--one-yellow);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.description-body {
+  font-size: 1.2rem;
+  /* margin-top: 1rem; */
+  line-height: 2;
+}
+
+.js-icon {
+  color: var(--one-yellow);
+  font-size: 1.8rem;
+}
