@@ -373,4 +373,5 @@ main {
   right: 50px;
   transform: scale(1);
   width: 10ch;
+  display: none;
 }
