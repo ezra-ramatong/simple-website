@@ -119,7 +119,7 @@ main {
 .home {
   display: flex;
   /* margin-top: 5rem; */
-  min-height: 60vh;
+  /* min-height: 60vh; */
 }
 
 .crop {
@@ -146,9 +146,9 @@ main {
 }
 
 .description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
   width: 60ch;
 }
 
@@ -172,6 +172,32 @@ main {
 .js-icon {
   color: var(--one-yellow);
   font-size: 1.8rem;
+}
+
+/* Button Styling*/
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: var(--font-weight-bold);
+  display: inline-block;
+  appearance: none;
+  border: 0;
+  border-radius: 30px;
+  background: transparent;
+  outline: 2px solid var(--one-yellow);
+  color: var(--one-yellow);
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 1.8em;
+  text-decoration: none;
+  text-align: center;
+  min-width: 10em;
+}
+
+.button:hover {
+  outline: none;
+  color: var(--one-bg);
+  background: var(--one-yellow);
 }
 
 .cta-btn {
@@ -200,7 +226,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 .tech-stack > h2 {
@@ -239,6 +265,10 @@ main {
   font-style: italic;
 }
 
+.project-1 a:hover {
+  text-decoration: underline;
+}
+
 .cv {
   margin-top: 2rem;
 }
@@ -271,8 +301,9 @@ main {
 }
 
 .about-me {
-  margin-top: 5rem;
-  min-height: 40vh;
+  margin-top: 4rem;
+  /* min-height: 40vh; */
+  padding-bottom: 3rem;
 }
 
 .about-me > h2 {
@@ -298,7 +329,8 @@ main {
 }
 
 .hire-me {
-  min-height: 40vh;
+  /* min-height: 40vh; */
+  padding-bottom: 4rem;
 }
 
 .hire-me h2 {
@@ -309,14 +341,20 @@ main {
 .hire-me p {
   margin-top: 0.8rem;
   font-size: 1.2rem;
+  padding-bottom: 2em;
 }
 
 .hire-me a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: var(--one-yellow);
   font-size: 1.2rem;
   margin-top: 0.8rem;
+  margin-inline: 1rem;
+}
+
+.hire-me a:nth-of-type(1) {
+  margin-inline-start: 0;
 }
 
 .hire-me i {
